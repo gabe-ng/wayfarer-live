@@ -49,17 +49,17 @@ class Navbar extends Component {
     } else {
       menu = <ul>
           <li>
-            <NavLink to="/homepage" activeClassName="active-nav" className="nav-item">
+            <NavLink to="/wayfarer-live/homepage" activeClassName="active-nav" className="nav-item">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/" exact activeClassName="active-nav" className="nav-item">
+            <NavLink to="/wayfarer-live" exact activeClassName="active-nav" className="nav-item">
               Profile
             </NavLink>
           </li>
           <li onClick={this.userLogOut}>
-            <NavLink to="/" exact className="nav-logout">
+            <NavLink to="/wayfarer-live" exact className="nav-logout">
               Logout
             </NavLink>
           </li>

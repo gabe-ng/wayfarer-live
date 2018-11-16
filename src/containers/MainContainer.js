@@ -10,13 +10,13 @@ class MainContainer extends Component {
       <div>
         <Switch>
           <Route
-            path="/homepage"
+            path="/wayfarer-live/homepage"
             render={props => (
               <CityContainer {...props} loggedIn={this.props.loggedIn} />
             )}
           />
           <Route
-            path="/"
+            path="/wayfarer-live"
             exact
             render={props => (
               <Landing {...props} loggedIn={this.props.loggedIn} currentUser={this.currentUser}/>
