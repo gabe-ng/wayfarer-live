@@ -86,7 +86,7 @@ button:focus {
 /* ********** MODALS ************** */
 .Modal.signup {
   width: 30vw;
-  height: 46vh;
+  height: 48vh;
   margin: 10rem auto;
   color: white;
   background-color: rgb(232, 242, 248);
@@ -95,7 +95,7 @@ button:focus {
 
 .Modal.signin {
   width: 30vw;
-  height: 31vh;
+  height: 33vh;
   margin: 10rem auto;
   padding: 1em;
   background-color: rgb(232, 242, 248);
