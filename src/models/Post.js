@@ -2,7 +2,7 @@ import axios from 'axios';
 
 class PostModel {
     static getPosts(city) {
-        let url = "http://localhost:3001/api/posts/" + city
+        let url = "https://wayfarerserver.herokuapp.com/api/posts/" + city;
         let request = axios.get(url);
         
         console.log("City posts request: ", request);
@@ -10,7 +10,7 @@ class PostModel {
     }
 
     static showPost(id) {
-        let url = "http://localhost:3001/api/posts/post/" + id;
+        let url = "https://wayfarerserver.herokuapp.com/api/posts/post/" + id;
         let request = axios.get(url);
         console.log(request, "YEET");
         console.log(id);
@@ -19,7 +19,7 @@ class PostModel {
     }
 
     static addPost(title, body, city, username) {
-        let url = "http://localhost:3001/api/posts/create";
+        let url = "https://wayfarerserver.herokuapp.com/api/posts/create";
         let request = axios.post(url, {
             username: username,
             title: title,
@@ -31,7 +31,7 @@ class PostModel {
     }
 
     static updatePost(id, title, body) {
-        let url = "http://localhost:3001/api/posts/update/" + id;
+        let url = "https://wayfarerserver.herokuapp.com/api/posts/update/" + id;
         let request = axios.put(url, {
             title: title,
             body: body,
@@ -41,7 +41,7 @@ class PostModel {
     }
 
     static deletePost(username, postId) {
-        let url = "http://localhost:3001/api/posts/delete";
+        let url = "https://wayfarerserver.herokuapp.com/api/posts/delete";
         let request = axios.delete(url, {
             data: {
                 username: username,
