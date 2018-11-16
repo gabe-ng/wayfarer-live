@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500i');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(232, 242, 248);
+  color: navy;
+}
+
+ul {
+  list-style: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* ********** NAVBAR ************** */
+
+.navbar {
+  height: 90px;
+  display: flex;
+  position: relative;
+  background: transparent;
+}
+
+.navbar-title {
+  font-size: 2.5em;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 2px;
+  color: navy;
+}
+
+.navbar-title:hover {
+  color: rgb(240, 196, 116);
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0;
+}
+
+.navbar li {
+  padding: 0 1.5em;
+}
+
+.nav-button {
+  font-size: 1em;
+  color: navy;
+  padding-bottom: .4em;
+  letter-spacing: 1px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding-bottom: 2px;
+}
+
+.nav-button:hover {
+  border-bottom: 1px solid navy;
+}
+
+.nav-item,
+.nav-logout {
+  font-style: italic;
+  color: navy;
+  padding-bottom: 2px;
+}
+
+.nav-item:hover,
+.nav-logout:hover {
+  text-decoration: none;
+  color: rgb(240, 196, 116);
+  border-bottom: 1px solid rgb(240, 196, 116);
+}
+
+.active-nav {
+  color: rgb(240, 196, 116);
+}
+
+/* ********** MODALS ************** */
+.Modal.signup {
+  width: 30vw;
+  height: 46vh;
+  margin: 10rem auto;
+  color: white;
+  background-color: rgb(232, 242, 248);
+  border-radius: 5%;
+}
+
+.Modal.signin {
+  width: 30vw;
+  height: 31vh;
+  margin: 10rem auto;
+  padding: 1em;
+  background-color: rgb(232, 242, 248);
+  border-radius: 5%;
+}
+
+.modal-content {
+  color: navy;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  border: none;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form input,
+.modal-form textarea {
+  font-size: 1em;
+  width: 18rem;
+  margin: 0.5em auto;
+  border: 1px solid navy;
+  border-radius: 5%;
+  padding-left: .5em;
+}
+
+.signup h1 {
+  margin-top: .5em;
+}
+
+.login-button {
+  border: 1px solid navy;
+  background: transparent;
+}
+
+.login-button:hover {
+  color: white;
+  background: navy;
+}
+
+.close-signup {
+  position: relative;
+  bottom: -.7rem;
+  border: 1px solid navy;
+  background: transparent;
+  cursor: pointer
+}
+
+.close-signin {
+  position: relative;
+  bottom: -.6rem;
+  border: 1px solid navy;
+  background: transparent;
+  cursor: pointer
+}
+
+.close-signup:hover,
+.close-signin:hover {
+  color: white;
+  background: navy;
+}
+
+::placeholder {
+  padding-left: 0.5em;
+}
+
+.login-button {
+  width: 10rem;
+  margin: 0.5em auto;
+}
+
+.login-button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* ********** LANDING ************** */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-statement {
+  font-size: 3em;
+  text-align: center;
+  padding-top: .3em;
+  letter-spacing: 5px;
+  color: navy
+}
+
+.orange {
+  color: rgb(240, 196, 116)
+}
+
+/* ********** CAROUSEL ************** */
+.carousel {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.carousel-city-name {
+  z-index: 10;
+  color: white;
+  font-size: 1.5em;
+  padding: .5em 0 0 1em;
+  position: relative;
+  top: 92%;
+  text-align: left;
+  font-style: italic;
+}
+
+.carousel-arrow {
+  font-size: 2.5em;
+  color: white;
+  cursor: pointer;
+  width: 20px;
+}
+
+.left.carousel-arrow {
+  position: relative;
+  top: -53%;
+  left: 1%;
+}
+
+.right.carousel-arrow {
+  position: relative;
+  top: -61%;
+  left: 96.5%;
+}
+
+/* ********** PROFILE ************** */
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 25vh;
+}
+
+.profile-title {
+  font-size: 2.1em;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0.5em auto;
+  letter-spacing: 1.5px;
+}
+
+.profile-edit {
+  font-size: 0.3em;
+  padding: 1em 1em;
+  cursor: pointer;
+  text-align: center;
+}
+
+.profile-edit:hover {
+  color: rgb(189, 140, 4);
+}
+
+.profile-info {
+  text-align: left;
+  margin: 1.5em auto;
+}
+
+.profile-info p {
+  letter-spacing: 1px;
+}
+
+.profile-posts {
+  margin: 1.5em auto;
+}
+
+.profile-posts-lists {
+  padding: 0;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  margin: 2em auto;
+}
+
+.profile-form input {
+  font-size: 1em;
+  width: 18rem;
+  margin: 1em auto;
+  border: 1px solid navy;
+  border-radius: 5%;
+  padding-left: .5em;
+}
+
+.profile-form button {
+  margin: 1em auto 0;
+  border: 1px solid navy;
+  background: transparent;
+}
+
+.profile-form button:hover {
+  color: white;
+  background: navy;
+  cursor: pointer;
+}
+
+/* ********** HOMEPAGE ************** */
+.homepage {
+  display: flex;
+  margin-top: .5em;
+}
+
+/* ********** CITIES LIST ************** */
+.city-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 auto;
+  height: 88vh;
+  width: 28%;
+}
+
+.city-list-container h1 {
+ font-size: 1.8em
+}
+
+.city-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.city-list-item {
+  max-width: 100%;
+  padding: 1em;
+  margin: 0.6em auto;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+.city-list-item h2 {
+  display: inline-block;
+  padding-left: 1.5em;
+  font-size: 1.4em;
+}
+
+.city-list-item img {
+  max-height: 50%;
+  max-width: 45%;
+  border-radius: 5%;
+  margin-left: 1em;
+}
+
+.city-list-active {
+  background-color: rgb(240, 196, 116);
+}
+
+/* ********** CITY VIEW ************** */
+.city-container {
+  width: 68%;
+  margin: 0 auto 0;
+  border-radius: 1.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.city-country-title {
+  display: flex;
+  width: 100%;
+  margin: 3em auto 0;
+  padding-bottom: 1em;
+}
+
+.city-country-name {
+  width: 90%;
+  color: white;
+  margin: 0 auto;
+}
+
+.city-country-name h1 {
+  font-size: 4em;
+}
+
+.city-country-name h3 {
+  font-size: 2em;
+}
+
+.city-country-image {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.city-country-image img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 5%;
+}
+
+/* ********** POST CONTAINER ************** */
+.post-container {
+  background: rgba(255, 255, 255, 0.863);
+  display: flex;
+  flex-direction: column;
+}
+
+.post-container h1 {
+  font-size: 2em;
+  margin: 1em;
+}
+
+.post-list-header {
+  margin: 0 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-post {
+  margin: 2em;
+  background: transparent;
+  padding: .5em;
+  border: 1px solid rgba(109, 109, 109, 0.473);
+  border-radius: 6.5%;
+  width: 6rem;
+  height: 3em;
+}
+
+.add-post-button {
+  cursor: pointer;
+}
+
+.add-post:hover {
+  background-color: navy;
+  color: white;
+}
+
+/* ********** POST LIST ************** */
+.post-list {
+  max-height: 48vh;
+  overflow-y: scroll;
+}
+
+/* ********** POST ************** */
+.post {
+  border: 1px solid rgba(109, 109, 109, 0.473);
+  border-radius: 10px;
+  max-width: 90%;
+  margin: .5em auto;
+}
+
+.post h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.post p {
+  margin: 1em 2.5em;
+}
+
+.body-p a {
+	color: rgb(189, 140, 4)
+}
+
+.body-p a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+
+.body-p a.morelink:hover {
+  color: navy;
+}
+
+.morecontent span {
+	display: none;
+}
+
+.post-option {
+  font-size: .8em;
+}
+
+.post-option:hover {
+  color: rgb(189, 140, 4);
+  cursor: pointer;
+}
+
+/* ********** POST MODAL ************** */
+.Modal.add-post {
+  width: 30vw;
+  height: 32vh;
+  margin: 10rem auto;
+  padding: 1em;
+  background-color: rgb(232, 242, 248);
+  border-radius: 5%;
+}
+
+.add-post-button {
+  border: 1px solid navy;
+  background: transparent;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.add-post-button:hover,
+.close-add-post:hover {
+  background: navy;
+  color: white;
+}
+
+.close-add-post {
+  border: 1px solid navy;
+  background: transparent;
+  cursor: pointer;
+  margin-top: .5em;
+}
+
+.new-post-text {
+  margin-bottom: .5em;
+}
+
+/* ********** POST FORM ************** */
+.post-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+}
+
+.post-form input,
+.post-form textarea {
+  font-size: 1em;
+  width: 13rem;
+  margin: 0.5em auto;
+  border: 1px solid navy;
+  border-radius: 5%;
+  padding-left: .5em;
+}
+
+.post-form textarea {
+  width: 70%;
+  height: 10rem;
+  border-radius: 5px;
+}
+
+.edit-post-submit,
+.edit-post-cancel {
+  font-size: .9em;
+  background: transparent;
+  border: 1px solid navy;
+  padding: .3em .5em;
+  cursor: pointer;
+}
+
+.edit-post-cancel {
+  margin-top: 1em;
+}
+
+.edit-post-submit:hover,
+.edit-post-cancel:hover {
+  background: navy;
+  color: white;
+}
+
+.edit-post-title {
+  margin: 1em;
+}
+
+.edit-post-text {
+  margin: 1em;
+  font-size: 1em;
+  width: 80%;
+  height: 4rem;
+}
+
+.edit-post-submit {
+  max-width: 50%;
+}
+
+/* ********** POST DETAIL ************** */
+.post-detail {
+  background: rgba(255, 255, 255, 0.733);
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-detail h3 {
+  margin: 1em auto;
+}
+
+.post-detail p {
+  max-width: 90%;
+  font-size: 1.1em;
+  margin: .5em auto;
+}
+
+.exit-detail-page {
+  cursor: pointer;
+}
+
+.exit-detail-page:hover {
+  color: rgb(189, 140, 4);
+}
+
+/* ********** MEDIA QUERIES ************** */
+@media only screen and (max-width: 1446px) {
+  .city-list-item {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .city-list-item img {
+    margin: 0;
+    max-height: 60%;
+    max-width: 55%;
+  }
+
+  .city-list-item h2 {
+    display: block;
+    font-size: 1.8em;
+    margin: .5em 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .city-list-item h2 {
+    font-size: 1.2em;
+  }
+
+  .city-country-name h1 {
+    font-size: 3em;
+  }
+
+  .city-country-name h3 {
+    font-size: 2em;
+  }
+}
