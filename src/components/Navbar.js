@@ -68,7 +68,7 @@ class Navbar extends Component {
 
     return (
       <div className="navbar">
-        <Link to={"/"} className="navbar-title">
+        <Link to={"/wayfarer-live"} className="navbar-title">
           Wayfarer
         </Link>
 
